@@ -1,0 +1,25 @@
+package:
+  name: moreutils
+  version: '0.59'
+
+source:
+  fn: moreutils-0.59.tar.gz
+  url: https://github.com/netj/moreutils/archive/0.59.tar.gz
+  sha1: 7731c862384e05243e4856b462185152f87d31ab
+
+build:
+  number: 1
+
+requirements:
+  build:
+  run:
+
+test:
+  commands:
+    - sponge -h
+    - echo hello | ts
+
+about:
+  home: http://joeyh.name/code/moreutils/
+  license: GPLv2
+  summary: a growing collection of the unix tools that nobody thought to write long ago when unix was young
