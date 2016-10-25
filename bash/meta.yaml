@@ -1,0 +1,24 @@
+package:
+  name: bash
+  version: 4.3.42
+
+source:
+    url: http://ftpmirror.gnu.org/bash/bash-4.3.tar.gz
+    fn: bash-4.3.tar.gz
+    sha256: afc687a28e0e24dc21b988fa159ff9dbcf6b7caa92ade8645cc6d5605cd024d4
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - gcc   # [linux]
+    - llvm  # [osx]
+
+test:
+  commands:
+    - bash --version
+
+about:
+  home: http://www.gnu.org/software/bash/
+  license: GPL
